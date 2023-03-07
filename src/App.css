@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+#number1{
+  font-size: 36px;
+}
+#number2{
+  font-size: 36px;
+}
+
+#button{
+  font-size: 36px;
+}
+
+#awnser{
+  font-size: 36px;
+}

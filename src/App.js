@@ -1,9 +1,9 @@
 import './App.css';
-import { Test } from './components/test';
+import { AddNumber } from './components/addNumber';
 
 function App() {
   return (
-    <Test/>
+    <AddNumber/>
   );
 }
 

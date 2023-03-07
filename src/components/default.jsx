@@ -1,5 +1,5 @@
 import logo from '../logo.svg';
-export function Test(){
+export function Default(){
     return <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
