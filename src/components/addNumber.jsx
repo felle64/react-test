@@ -24,7 +24,7 @@ export  function AddNumber(){
 
     let input1 = document.getElementById("number1");
     let input2 = document.getElementById("number2");
-    handleStartValueChange(2,4)
+    handleStartValueChange(input1,input2)
 
   
     
