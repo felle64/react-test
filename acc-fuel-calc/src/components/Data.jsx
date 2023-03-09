@@ -59,6 +59,7 @@ export const Data = () =>{
             type="text">
             Fuel needed: {Math.round(result*100)/100} L (exact) or {Math.round((result+(number3)*2)*100)/100} (safe)
         </div>
+        <p className="safeText">Safe adds 2 laps extra fuel</p>
         <footer className="footer">
             <p>Created by <a
                 href="https://github.com/felle64/react-test/tree/main/acc-fuel-calc"
