@@ -1,10 +1,10 @@
 import {Calc} from "./calc"
 import { useState } from 'react';
 
-export  function AddNumber(){
+export function AddNumber(){
     console.log("Reload");
-    const [message, setMessage] = useState('');
-    const [message2, setMessage2] = useState('');
+    const [number1, setMessage] = useState(0);
+    const [number2, setMessage2] = useState(0);
     
     const handleChange = (event) => {
 
@@ -12,42 +12,37 @@ export  function AddNumber(){
       };
     
       const handleChange2 = (event) => {
+   
 
         setMessage2(event.target.value);
       };
     
-      const handleStartValueChange = (value, value2) => {
-        const number1 = Number(value); // converts '' from empty input -> 0
-        const number2 = Number(value2);
-        Calc (number1,number2)
-      };
+        
+ 
+    let result = Calc (number1,number2)
+    
 
-    let input1 = document.getElementById("number1");
-    let input2 = document.getElementById("number2");
-    handleStartValueChange(input1,input2)
+    
+   
 
   
     
     return (<>
-       
+        <h1>Add Numbers</h1>
         <input
+        placeholder="Number1"
         type="number"
         id="number1"
-        name="number1"
         onChange={handleChange}
       />
 
         <input
+        placeholder="Number2"
         type="number"
         id="number2"
-        name="number2"
         onChange={handleChange2}
       />
-      <h2>Message: {message}</h2>
-      <h2>Message2: {message2}</h2>
-
-        
-    
+      <div className="resluts" type="text">Results: {number1} + {number2} = {result}</div>
     </>
     )
 }

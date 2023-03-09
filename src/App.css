@@ -28,13 +28,9 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resluts{
+  font-size: 46px;
+  color: red;
 }
 
 #number1{
@@ -44,10 +40,3 @@
   font-size: 36px;
 }
 
-#button{
-  font-size: 36px;
-}
-
-#awnser{
-  font-size: 36px;
-}
