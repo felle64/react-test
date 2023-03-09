@@ -61,11 +61,11 @@ export const Data = () =>{
         </div>
         <footer className="footer">
             <p>Created by <a
-                href="https://github.com/felle64"
+                href="https://github.com/felle64/react-test/tree/main/acc-fuel-calc"
                 target="_blank"
                 rel="noreferrer"
             >
-                Felle64
+                Github
             </a>
             </p>
         </footer>
