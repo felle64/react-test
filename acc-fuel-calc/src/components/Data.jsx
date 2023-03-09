@@ -57,7 +57,7 @@ export const Data = () =>{
         <div 
             className="results" 
             type="text">
-            Fuel needed: {Math.round(result)} L (exact) or {Math.round(result+(number3)*2)} (safe)
+            Fuel needed: {Math.round(result*100)/100} L (exact) or {Math.round((result+(number3)*2)*100)/100} (safe)
         </div>
         <footer className="footer">
             <p>Created by <a
