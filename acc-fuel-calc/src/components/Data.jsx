@@ -60,7 +60,7 @@ export const Data = () =>{
             Fuel needed: {Math.round(result)} L (exact) or {Math.round(result+(number3)*2)} (safe)
         </div>
         <footer className="footer">
-            <p>Created by<a
+            <p>Created by <a
                 href="https://github.com/felle64"
                 target="_blank"
                 rel="noreferrer"
