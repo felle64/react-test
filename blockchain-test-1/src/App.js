@@ -5,6 +5,7 @@ import { PERSON_LIST_ABI, PERSON_LIST_ADDRESS } from './config';
 
 function App() {
   const [account, setAccount] = useState();
+  const [indexes, setIndexes] = useState();
 
   useEffect(() => {
     const getAccounts = async () => {
@@ -21,6 +22,11 @@ function App() {
       let indexes = await personContract.methods.getIndexList().call();
       console.log(indexes);
 
+      const html = indexes.map((index) => {
+        return <li>{index}</li>;
+      })
+      setIndexes(html)
+
     };
 
     console.log("TEST");
@@ -31,6 +37,9 @@ function App() {
   return (
     <div className="App">
       <p> Account: {account}</p>
+      <ul>
+        {indexes}
+      </ul>
     </div>
   );
 }
